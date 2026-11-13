@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Bitte zitieren Sie die Kapitel nach Friedberg mit Spalte und die digitale Fassung wie unten angegeben."
+type: dataset
+title: "Corpus iuris canonici II. Decretalium collectiones, ed. Aemilius Friedberg (Leipzig 1881). Digitale Fassung"
+authors:
+  - family-names: Schonhardt
+    given-names: Michael
+    orcid: "https://orcid.org/0000-0002-2750-1900"
+    affiliation: "Technische Universität Darmstadt, Fachgebiet Digitale Editorik und Kulturgeschichte des Mittelalters"
+license: CC-BY-4.0
+repository-code: "https://github.com/dekm-tud/friedberg-decretales"
+url: "https://dekm-tud.github.io/friedberg-decretales/"
+keywords:
+  - Corpus iuris canonici
+  - Liber Extra
+  - Liber Sextus
+  - Clementinae
+  - Extravagantes
+  - kanonisches Recht
+  - TEI
+references:
+  - type: book
+    title: "Corpus iuris canonici. Pars secunda: Decretalium collectiones"
+    editors:
+      - family-names: Friedberg
+        given-names: Aemilius
+    publisher:
+      name: Tauchnitz
+    year: 1881
+    location:
+      name: Leipzig

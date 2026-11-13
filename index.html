@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corpus iuris canonici II (Friedberg)</title>
+<meta name="description" content="Decretalium collectiones nach der Ausgabe von Ae. Friedberg (Leipzig 1881): Text nach Kapiteln mit dem Seitenbild.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="kopf">
+  <a class="werktitel" href="./">
+    <span class="t">Corpus iuris canonici II</span>
+    <span class="ed">Decretalium collectiones, ed. Friedberg 1881</span>
+  </a>
+  <form id="suche" class="suche" role="search" autocomplete="off">
+    <input id="q" type="search" placeholder="Suche" aria-label="Suche">
+    <div id="treffer" class="treffer" hidden></div>
+  </form>
+  <nav class="schalter" aria-label="Ansicht">
+    <button id="gl-schalter" class="sch nur-schmal" type="button" aria-expanded="false">Gliederung</button>
+    <button id="bildschalter" class="sch" type="button" aria-pressed="true">Druck</button>
+    <a class="sch" href="ausgabe.html">Zur Ausgabe</a>
+  </nav>
+</header>
+<main class="rahmen">
+  <nav id="gliederung" class="gliederung" aria-label="Gliederung"></nav>
+  <section id="text" class="text" aria-live="polite"></section>
+  <section id="bild" class="bild" aria-label="Seitenbild">
+    <div class="bildleiste">
+      <button id="zurueck" class="sch" type="button" aria-label="vorige Seite">‹</button>
+      <span id="blattnr" class="blattnr">–</span>
+      <button id="vor" class="sch" type="button" aria-label="nächste Seite">›</button>
+      <span class="trenn"></span>
+      <a id="mirador-link" class="sch" target="_blank" rel="noopener" href="#">Mirador</a>
+      <a id="manifest-link" class="sch" target="_blank" rel="noopener" href="#">IIIF</a>
+    </div>
+    <div id="osd"></div>
+  </section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

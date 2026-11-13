@@ -1,0 +1,158 @@
+/* Schriften: Libertinus Serif (Text), Source Sans 3 (Angaben); beide SIL Open Font License, siehe fonts/ */
+@font-face { font-family: "Libertinus Serif"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(fonts/libertinus-serif-latin-400-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Libertinus Serif"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(fonts/libertinus-serif-latin-ext-400-normal.woff2) format("woff2"); unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Libertinus Serif"; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(fonts/libertinus-serif-latin-400-italic.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+2000-206F, U+FEFF, U+FFFD; }
+@font-face { font-family: "Libertinus Serif"; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(fonts/libertinus-serif-latin-ext-400-italic.woff2) format("woff2"); unicode-range: U+0100-02AF, U+1E00-1E9F, U+A720-A7FF; }
+@font-face { font-family: "Libertinus Serif"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(fonts/libertinus-serif-latin-600-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+2000-206F, U+FEFF, U+FFFD; }
+@font-face { font-family: "Libertinus Serif"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(fonts/libertinus-serif-latin-ext-600-normal.woff2) format("woff2"); unicode-range: U+0100-02AF, U+1E00-1E9F, U+A720-A7FF; }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(fonts/source-sans-3-latin-400-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+2000-206F, U+FEFF, U+FFFD; }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(fonts/source-sans-3-latin-ext-400-normal.woff2) format("woff2"); unicode-range: U+0100-02AF, U+1E00-1E9F, U+A720-A7FF; }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(fonts/source-sans-3-latin-600-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+2000-206F, U+FEFF, U+FFFD; }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(fonts/source-sans-3-latin-ext-600-normal.woff2) format("woff2"); unicode-range: U+0100-02AF, U+1E00-1E9F, U+A720-A7FF; }
+
+:root {
+  --papier: #ffffff; --tinte: #17181a; --grau: #5e636a; --haar: #dde0e4; --flaeche: #f4f5f7; --akzent: #1f3d6d;
+  --auswahl: #edf2f9; --berichtigt: #3f6e3a; --unsicher: #8a5a00; --berichtigt-f: #e4f0e1; --unsicher-f: #fbefc6;
+  --bildgrund: #2a2c2f;
+  --serif: "Libertinus Serif", "Linux Libertine O", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "Source Sans 3", "Source Sans Pro", "Segoe UI", Helvetica, Arial, sans-serif;
+  --rand: 5.2rem;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --papier: #131518; --tinte: #e6e7e9; --grau: #9aa0a8; --haar: #2e3237; --flaeche: #1b1e22; --akzent: #9db9e8;
+    --auswahl: #1f2a3a; --berichtigt: #9cc98f; --unsicher: #e3b65c; --berichtigt-f: #22331f; --unsicher-f: #3d3216;
+  }
+}
+:root[data-theme="dark"] {
+  --papier: #131518; --tinte: #e6e7e9; --grau: #9aa0a8; --haar: #2e3237; --flaeche: #1b1e22; --akzent: #9db9e8;
+  --auswahl: #1f2a3a; --berichtigt: #9cc98f; --unsicher: #e3b65c; --berichtigt-f: #22331f; --unsicher-f: #3d3216;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--papier); color: var(--tinte); font: 18px/1.6 var(--serif); display: flex; flex-direction: column;
+       font-variant-numeric: oldstyle-nums; }
+a { color: var(--akzent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button { font: inherit; color: inherit; }
+
+/* Kopf */
+.kopf { display: flex; align-items: center; gap: 24px; padding: 10px 22px; border-bottom: 1px solid var(--haar);
+        font-family: var(--sans); }
+.werktitel { color: var(--tinte); display: flex; align-items: baseline; gap: 10px; white-space: nowrap; min-width: 0; }
+.werktitel:hover { text-decoration: none; }
+.werktitel .t { font: 1.15rem var(--serif); }
+.werktitel .ed { color: var(--grau); font-size: .88rem; overflow: hidden; text-overflow: ellipsis; }
+.suche { position: relative; margin-left: auto; flex: 0 1 300px; }
+.suche input { width: 100%; border: 1px solid var(--haar); border-radius: 2px; background: var(--papier); color: var(--tinte);
+               font: .92rem var(--sans); padding: 5px 9px; outline: none; }
+.suche input:focus { border-color: var(--akzent); }
+.treffer { position: absolute; z-index: 30; top: calc(100% + 4px); right: 0; width: min(540px, 92vw); max-height: 70vh; overflow: auto;
+           background: var(--papier); border: 1px solid var(--haar); box-shadow: 0 6px 18px rgba(0, 0, 0, .08); }
+.treffer a { display: block; padding: 6px 12px; color: var(--tinte); font: .95rem/1.4 var(--serif); border-bottom: 1px solid var(--haar); }
+.treffer a:last-child { border-bottom: 0; }
+.treffer a:hover, .treffer a:focus { background: var(--auswahl); outline: none; text-decoration: none; }
+.treffer b { font: 600 .85rem var(--sans); color: var(--akzent); margin-right: 8px; }
+.treffer .ctx { display: block; color: var(--grau); font-size: .88rem; }
+.treffer mark { background: var(--unsicher-f); color: var(--tinte); }
+.treffer .leer { color: var(--grau); padding: 6px 12px; font: .85rem var(--sans); }
+.schalter { display: flex; gap: 18px; align-items: center; }
+.sch { background: none; border: 0; padding: 0; cursor: pointer; font: .9rem var(--sans); color: var(--grau); }
+.sch:hover { color: var(--tinte); text-decoration: none; }
+.sch[aria-pressed="true"], .sch[aria-expanded="true"] { color: var(--tinte); }
+.sch[aria-pressed="false"] { text-decoration: line-through; }
+.nur-schmal { display: none; }
+
+/* Rahmen */
+.rahmen { flex: 1; display: grid; grid-template-columns: 280px minmax(0, 1fr) minmax(0, 1fr); min-height: 0; }
+.rahmen.ohne-bild { grid-template-columns: 280px minmax(0, 1fr); }
+.rahmen.ohne-bild .bild { display: none; }
+
+/* Gliederung */
+.gliederung { overflow: auto; border-right: 1px solid var(--haar); padding: 12px 0 40px; font: .9rem/1.35 var(--sans);
+              background: var(--flaeche); }
+.gliederung details > summary { list-style: none; cursor: pointer; padding: 4px 16px; }
+.gliederung details > summary::-webkit-details-marker { display: none; }
+.gliederung .w > summary { font-weight: 600; margin-top: 4px; }
+.gliederung .l > summary { padding-left: 26px; color: var(--grau); }
+.gliederung summary::before { content: "▸"; display: inline-block; width: 1.1em; color: var(--grau); font-size: .75em; }
+.gliederung details[open] > summary::before { content: "▾"; }
+.gliederung a { display: grid; grid-template-columns: 2.6em 1fr; gap: 4px; padding: 2px 14px 2px 30px; color: var(--tinte); }
+.gliederung .l a { padding-left: 40px; }
+.gliederung a:hover { background: var(--auswahl); text-decoration: none; }
+.gliederung a.aktiv { background: var(--auswahl); box-shadow: inset 3px 0 0 var(--akzent); }
+.gliederung .nr { color: var(--grau); text-align: right; padding-right: 6px; font-variant-numeric: lining-nums; }
+
+/* Text */
+.text { overflow: auto; padding: 24px 40px 120px 14px; }
+.tit { margin: 0 0 6px var(--rand); padding-bottom: 14px; border-bottom: 1px solid var(--tinte); }
+.tit .sigle { font: .85rem var(--sans); color: var(--grau); }
+.tit h1 { font-weight: 400; font-size: 1.6rem; line-height: 1.25; margin: 2px 0 10px; }
+.tnav { display: flex; justify-content: space-between; font: .85rem var(--sans); }
+.kap { display: grid; grid-template-columns: var(--rand) minmax(0, 1fr); padding: 18px 0 16px; border-bottom: 1px solid var(--haar); }
+.kap.aktiv .rand .c { font-weight: 600; }
+.kap.aktiv .korpus { box-shadow: inset 2px 0 0 var(--akzent); }
+.rand { text-align: right; padding-right: 16px; font: .82rem/1.35 var(--sans); color: var(--grau); }
+.rand .c { display: block; font-size: .9rem; color: var(--akzent); }
+.korpus { min-width: 0; position: relative; padding-left: 12px; }
+.kzeile { display: flex; align-items: baseline; column-gap: 16px; row-gap: 2px; flex-wrap: wrap; margin-bottom: 8px;
+          font: .82rem var(--sans); color: var(--grau); }
+.kzeile .kid { font: 600 .95rem var(--sans); color: var(--tinte); }
+.kzeile .tief { color: var(--unsicher); }
+.kzeile .kb, .kzeile .ku { padding: 0 4px; color: var(--tinte); }
+.summ { font-size: .92rem; line-height: 1.5; color: var(--grau); margin: 0 0 8px; }
+.inscr { margin: 0 0 6px; letter-spacing: .08em; }
+.kt { margin: 0; text-align: justify; hyphens: auto; position: relative; }
+.ub { cursor: pointer; }
+.ub::before { content: "|"; color: var(--akzent); margin: 0 .15em; }
+.ubr { position: absolute; left: calc(-1 * var(--rand) - 12px); width: calc(var(--rand) - 16px); text-align: right;
+       font: .76rem/2.2 var(--sans); color: var(--akzent); font-style: normal; }
+.zeichen { color: var(--akzent); font: .7em var(--sans); cursor: help; margin-right: .1em; }
+.kb { background: var(--berichtigt-f); }
+.ku { background: var(--unsicher-f); }
+.zitat { margin: 12px 0 0; font: .8rem/1.45 var(--sans); color: var(--grau); }
+.zitat button { margin-left: 8px; font: .8rem var(--sans); color: var(--akzent); background: none; border: 0; padding: 0; cursor: pointer; }
+.zitat button:hover { text-decoration: underline; }
+.hinweis { color: var(--grau); margin-left: var(--rand); font-family: var(--sans); }
+
+/* Bild */
+.bild { border-left: 1px solid var(--haar); min-height: 0; display: flex; flex-direction: column; }
+.bildleiste { display: flex; gap: 14px; align-items: center; padding: 7px 14px; border-bottom: 1px solid var(--haar); font: .88rem var(--sans); }
+.bildleiste .blattnr { color: var(--grau); min-width: 9em; text-align: center; }
+.bildleiste .trenn { flex: 1; }
+#osd { flex: 1; min-height: 0; background: var(--bildgrund); }
+.block { outline: 2px solid #3d7be0; background: rgba(61, 123, 224, .08); pointer-events: none; }
+
+@media (max-width: 1000px) {
+  :root { --rand: 3.4rem; }
+  body { font-size: 17px; }
+  html, body { height: auto; }
+  .kopf { flex-wrap: wrap; gap: 8px 18px; padding: 10px 16px; }
+  .werktitel .ed { display: none; }
+  .suche { order: 3; flex-basis: 100%; }
+  .nur-schmal { display: inline; }
+  .rahmen, .rahmen.ohne-bild { display: block; }
+  .gliederung { display: none; border-right: 0; border-bottom: 1px solid var(--haar); max-height: 60vh; }
+  .gliederung.offen { display: block; }
+  .text { overflow: visible; padding: 18px 16px 40px 0; }
+  .rahmen:not(.ohne-bild) .text { padding-bottom: 54vh; }
+  .rahmen:not(.ohne-bild) .bild { position: fixed; left: 0; right: 0; bottom: 0; height: 50vh; z-index: 10; border-left: 0;
+                                  border-top: 1px solid var(--haar); background: var(--papier); }
+}
+@media print {
+  .kopf .suche, .schalter, .gliederung, .bild, .tnav, .zitat button { display: none !important; }
+  .rahmen { display: block; } .text { overflow: visible; padding: 0; }
+  body { height: auto; }
+  .kb, .ku { background: none; }
+}
