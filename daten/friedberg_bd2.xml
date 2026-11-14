@@ -10,7 +10,7 @@
 <funder>LOEWE-Exploration (Projekt Embedding the Past)</funder>
 </titleStmt>
 <editionStmt><edition>Fassung vom <date when="2026-11-14">14.11.2026</date></edition></editionStmt>
-<extent>2529 Kapitel, 510732 Wörter</extent>
+<extent>2529 Kapitel, 88 Regulae iuris, 510464 Wörter</extent>
 <publicationStmt><publisher>Technische Universität Darmstadt, Fachgebiet Digitale Editorik und Kulturgeschichte des Mittelalters</publisher>
 <pubPlace>Darmstadt</pubPlace><date when="2026-11-14"/>
 <availability status="free"><licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International (CC BY 4.0)</licence></availability>
@@ -43,7 +43,9 @@ bezeichnet.</p></interpretation>
 </editorialDecl>
 <refsDecl><p>Jedes Kapitel ist ein div[@type="capitulum"]. Das Attribut n trägt die übliche Zählung aus Sigle, Buch,
 Titel und Kapitel (X 3.5.12, VI 1.6.3, Clem 3.4.2, Extrav.Io 5.1, Extrav.comm 3.2.1), xml:id dieselbe Kennung mit
-Punkten (X.3.5.12). Die Promulgationsbullen stehen als div[@type="prooemium"] (X pr, VI pr, Clem pr). pb/@n zählt
+Punkten (X.3.5.12). Die Promulgationsbullen stehen als div[@type="prooemium"] (X pr, VI pr, Clem pr). Der Titel De regulis
+iuris am Ende des Liber Sextus ist im Druck nicht gezählt. Er wird hier als VI 5.13 geführt, jede Regula als
+div[@type="regula"] mit ihrer Nummer (VI 5.13.17). pb/@n zählt
 die Aufnahmen des Digitalisats, pb/@facs verweist auf die IIIF-Leinwand, cb/@n ist Friedbergs Spalte.</p></refsDecl>
 </encodingDesc>
 <profileDesc><langUsage><language ident="la">Latein</language></langUsage></profileDesc>
@@ -10168,7 +10170,274 @@ die Aufnahmen des Digitalisats, pb/@facs verweist auf die IIIF-Leinwand, cb/@n i
 <div type="capitulum" xml:id="VI.5.12.5" n="VI 5.12.5">
 <head type="summarium">Privilegiato aliquo, ut possit conferre beneficia clericorum suorum, quid appellatio clericorum suorum designet, ostendit. Ioann. Andr.</head>
 <head type="inscriptio">Idem.</head>
-<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1121"/>Sicut nobis significare curasti, tibi gratiose concessimus, ut beneficia clericorum tuorum cedentium vel decedentium possis conferre, quodque iidem clerici praebendarum suarum fructus percipiant, ac si in suis ecclesiis personaliter residerent. Verum quia dubitas, qui clericorum tuorum appellatione debeant contineri: brevi respondemus oraculo, quod illos in his et similibus casibus tuos volumus intelligi clericos, qui per te non quaesiti propterea, vel recepti, sine fraude et fictione qualibet vere tui clerici familiares exsistunt, et in tuis expensis continue domestici commensales, etiamsi quos ex illis aliquando pro tuis gerendis negotiis abesse contingat. <cb n="1122"/>DE REGULIS IURIS. Bonifacius VIII. Regula I. Beneficium ecclesiasticum non potest licite sine institutione canonica obtineri. Idem. Regula II. Possessor malae fidei ullo tempore non praescribit. Idem. Reg. III. Sine possessione praescriptio non procedit. Idem. Reg. IV. Peccatum non dimittitur, nisi restituatur ablatum. Idem. Reg. V. Peccati venia non datur, nisi correcto. Idem. Reg. VI. Nemo potest ad impossibile obligari. Idem. Reg. VII. Privilegium personale personam sequitur, et extinguitur cum persona. Idem. Reg. VIII. Semel malus semper praesumitur esse malus. Idem. Reg. IX. Ratum quis habere non potest quod ipsius nomine non est gestum. Idem. Reg. X. <unclear reason="lectio-machinalis">Ratihabitationem</unclear> retrotrahi, et mandato non est dubium comparari. Idem. Reg. XI. Quum sunt partium iura obscura, reo favendum est potius quam actori. Idem. Reg. XII. In iudiciis non est acceptio personarum habenda. Idem. Reg. XIII. Ignorantia facti, non iuris, excusat. Idem. Reg. XIV. Quum quis in ius succedit alterius: iustam ignorantiae causam censetur habere. Idem. Reg. XV. Odia restringi, et favores convenit ampliari. Idem. Reg. XVI. Decet concessum a principe beneficium esse mansurum. Idem. Reg. XVII. Indultum a iure beneficium non est alicui auferendum. Idem. Reg. XVIII. Non firmatur tractu temporis quod de iure ab initio non subsistit. Idem. Reg. XIX. Non est sine culpa, qui rei, quae ad eum non pertinet, se immiscet. Idem. Reg. XX. Nullus pluribus uti defensionibus prohibetur. Idem. Reg. XXI. Quod semel placuit amplius displicere non potest. Idem. Reg. XXII. Non debet aliquis alterius odio praegravari. Idem. Reg. XXIII. Sine culpa, nisi subsit causa, non est aliquis puniendus. Idem. Reg. XXIV. Quod quis mandato facit iudicis, dolo facere non videtur, quum habeat parere necesse. Idem. Reg. XXV. Mora sua cuilibet est nociva. Idem. Reg. XXVI. Ea, quae fiunt a iudice, si ad eius non spectant officium, viribus non subsistunt. Idem. Reg. XXVII. Scienti et consentienti non fit iniuria neque dolus. Idem. Reg. XXVIII. Quae a iure communi exorbitant, nequaquam ad consequentiam sunt trahenda. Idem. Reg. XXIX. Quod omnes tangit debet ab omnibus approbari. Idem. Reg. XXX. In obscuris minimum est sequendum. <pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Idem. Reg. XXXI. Eum, qui certus est, certiorari ulterius non oportet. Idem. Reg. XXXII. Non licet actori quod reo licitum non existit. Idem. Reg. XXXIII. Mutare consilium quis non potest in alterius detrimentum. Idem. Reg. XXXIV. Generi per speciem derogatur. Idem. Reg. XXXV. Plus semper in se continet quod est minus. Idem. Reg. XXXVI. Pro possessore habetur qui dolo desiit possidere. Idem. Reg. XXXVII. Utile non debet per inutile <unclear reason="lectio-machinalis">vitari.</unclear> Idem. Reg. XXXVIII. Ex eo non debet quis fructum consequi, quod nisus exstitit impugnare. Idem. Reg. XXXIX. Quum quid prohibetur, prohibentur omnia, quae sequuntur ex illo. Idem. Reg. XL. Pluralis locutio duorum numero est contenta. Idem. Reg. XLI. Imputari non debet ei, per quem non stat, si non faciat quod per eum fuerat faciendum. Idem. Reg. XLII. <unclear reason="lectio-machinalis">Accessory</unclear> naturam sequi congruit principalis. Idem. Reg. XLIII. Qui tacet, consentire videtur. Idem. Reg. XLIV. Is, qui tacet, non fatetur; sed nec utique negare videtur. Idem. Reg. XLV. Inspicimus in obscuris quod est verisimilius, vel quod plerumque fieri consuevit. Idem. Reg. XLVI. Is, qui in ius succedit alterius, eo iure, quo ille, uti debebit. Idem. Reg. XLVII. Praesumitur ignorantia, ubi scientia non probatur. Idem. Reg. XLVIII. Locupletari non debet aliquis cum alterius iniuria vel iactura. Idem. Reg. XLIX. In poenis benignior est interpretatio facienda. Idem. Reg. L. Actus legitimi conditionem non recipiunt neque diem. Idem. Reg. LI. Semel Deo dicatum<metamark function="lectio-romana" rend="*"/> non est ad usus humanos ulterius transferendum. Idem. Reg. LII. Non praestat impedimentum quod de iure non sortitur effectum. Idem. Reg. LIII. Cui licet quod est plus, licet utique quod est minus. Idem. Reg. LIV. Qui prior est tempore potior est iure. Idem. Reg. LV. Qui sentit onus, sentire debet commodum, et e contra. Idem. Reg. LVI. In re communi potior est conditio prohibentis. Idem. Reg. LVII. Contra eum, qui legem dicere potuit apertius, est interpretatio facienda. Idem. Reg. LVIII. Non est obligatorium contra bonos mores praestitum iuramentum. Idem. Reg. LIX. Dolo facit, qui petit quod restituere oportet eundem. Idem. Reg. LX. Non est in mora qui potest exceptione legitima se tueri. Idem. Reg. LXI. Quod ob gratiam alicuius conceditur, non est in eius dispendium retorquendum. <cb n="1124"/>Idem. Reg. LXII. Nullus ex consilio, dummodo fraudulentum non fuerit, obligatur. Idem. Reg. LXIII. Exceptionem obiciens non videtur de intentione adversarii confiteri. Idem. Reg. LXIV. Quae contra ius fiunt debent utique pro infectis haberi. Idem. Reg. LXV. In pari delicto vel causa potior est conditio possidentis. Idem. Reg. LXVI. Quum non stat per eum, ad quem pertinet, quo minus conditio impleatur: haberi debet perinde, ac si impleta fuisset. Idem. Reg. LXVII. Quod alicui suo non licet nomine, nec alieno licebit. Idem. Reg. LXVIII. Potest quis per alium, quod potest facere per se ipsum. Idem. Reg. LXIX. In malis promissis fidem non expedit observari. Idem. Reg. LXX. In alternativis debitoris est electio, et sufficit alterum adimpleri. Idem. Reg. LXXI. Qui ad agendum admittitur, est ad excipiendum multo magis admittendus. Idem. Reg. LXXII. Qui facit per alium, est perinde, ac si faciat per se ipsum. Idem. Reg. LXXIII. Factum legitime retractari non debet, licet casus postea eveniat, a quo non potuit inchoari. Idem. Reg. LXXIV. Quod alicui gratiose conceditur, trahi non debet ab aliis in exemplum. Idem. Reg. LXXV. Frustra sibi fidem quis postulat ab eo servari, cui fidem a se praestitam servare recusat. Idem. Reg. LXXVI. Delictum personae non debet in detrimentum ecclesiae redundare. Idem. Reg. LXXVII. Rationi congruit, ut succedat in onere, qui substituitur in honore. Idem. Reg. LXXVIII. In argumentum trahi nequeunt, quae propter necessitatem aliquando sunt concessa. Idem. Reg. LXXIX. Nemo potest plus iuris transferre in alium, quam sibi competere dinoscatur. Idem. Reg. LXXX. In toto partem non est dubium contineri. Idem. Reg. LXXXI. In generali concessione non veniunt ea, quae quis non esset verisimiliter in specie concessurus. Idem. Reg. LXXXII. Qui contra iura mercatur, bonam fidem praesumitur non habere. Idem. Reg. LXXXIII. Bona fides non patitur, ut semel exactum iterum exigatur. Idem. Reg. LXXXIV. Quum quid una via prohibetur alicui, ad id alia non debet admitti. Idem. Reg. LXXXV. Contractus ex conventione legem accipere dinoscuntur. Idem. Reg. LXXXVI. Damnum, quod quis sua culpa sentit, sibi debet, non aliis<metamark function="lectio-romana" rend="*"/>, imputare. Idem. Reg. LXXXVII. Infamibus portae non pateant dignitatum. Idem. Reg. LXXXVIII. Certum est, quod is committit in legem, qui, legis verba complectens, contra legis nititur voluntatem. Data<metamark function="lectio-romana" rend="*"/> Romae apud sanctum Petrum, V. Nonas Martii, Pontificatus nostri anno quarto.</p></div>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1121"/>Sicut nobis significare curasti, tibi gratiose concessimus, ut beneficia clericorum tuorum cedentium vel decedentium possis conferre, quodque iidem clerici praebendarum suarum fructus percipiant, ac si in suis ecclesiis personaliter residerent. Verum quia dubitas, qui clericorum tuorum appellatione debeant contineri: brevi respondemus oraculo, quod illos in his et similibus casibus tuos volumus intelligi clericos, qui per te non quaesiti propterea, vel recepti, sine fraude et fictione qualibet vere tui clerici familiares exsistunt, et in tuis expensis continue domestici commensales, etiamsi quos ex illis aliquando pro tuis gerendis negotiis abesse contingat.</p></div>
+</div>
+<div type="titulus" n="13">
+<head>De regulis iuris</head>
+<div type="regula" xml:id="VI.5.13.1" n="VI 5.13.1">
+<head type="inscriptio">Bonifacius VIII.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Beneficium ecclesiasticum non potest licite sine institutione canonica obtineri.</p></div>
+<div type="regula" xml:id="VI.5.13.2" n="VI 5.13.2">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Possessor malae fidei ullo tempore non praescribit.</p></div>
+<div type="regula" xml:id="VI.5.13.3" n="VI 5.13.3">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Sine possessione praescriptio non procedit.</p></div>
+<div type="regula" xml:id="VI.5.13.4" n="VI 5.13.4">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Peccatum non dimittitur, nisi restituatur ablatum.</p></div>
+<div type="regula" xml:id="VI.5.13.5" n="VI 5.13.5">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Peccati venia non datur, nisi correcto.</p></div>
+<div type="regula" xml:id="VI.5.13.6" n="VI 5.13.6">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Nemo potest ad impossibile obligari.</p></div>
+<div type="regula" xml:id="VI.5.13.7" n="VI 5.13.7">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Privilegium personale personam sequitur, et extinguitur cum persona.</p></div>
+<div type="regula" xml:id="VI.5.13.8" n="VI 5.13.8">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Semel malus semper praesumitur esse malus.</p></div>
+<div type="regula" xml:id="VI.5.13.9" n="VI 5.13.9">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Ratum quis habere non potest quod ipsius nomine non est gestum.</p></div>
+<div type="regula" xml:id="VI.5.13.10" n="VI 5.13.10">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Ratihabitationem retrotrahi, et mandato non est dubium comparari.</p></div>
+<div type="regula" xml:id="VI.5.13.11" n="VI 5.13.11">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Quum sunt partium iura obscura, reo favendum est potius quam actori.</p></div>
+<div type="regula" xml:id="VI.5.13.12" n="VI 5.13.12">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>In iudiciis non est acceptio personarum habenda.</p></div>
+<div type="regula" xml:id="VI.5.13.13" n="VI 5.13.13">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Ignorantia facti, non iuris, excusat.</p></div>
+<div type="regula" xml:id="VI.5.13.14" n="VI 5.13.14">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Quum quis in ius succedit alterius: iustam ignorantiae causam censetur habere.</p></div>
+<div type="regula" xml:id="VI.5.13.15" n="VI 5.13.15">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Odia restringi, et favores convenit ampliari.</p></div>
+<div type="regula" xml:id="VI.5.13.16" n="VI 5.13.16">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Decet concessum a principe beneficium esse mansurum.</p></div>
+<div type="regula" xml:id="VI.5.13.17" n="VI 5.13.17">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Indultum a iure beneficium non est alicui auferendum.</p></div>
+<div type="regula" xml:id="VI.5.13.18" n="VI 5.13.18">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Non firmatur tractu temporis quod de iure ab initio non subsistit.</p></div>
+<div type="regula" xml:id="VI.5.13.19" n="VI 5.13.19">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Non est sine culpa, qui rei, quae ad eum non pertinet, se immiscet.</p></div>
+<div type="regula" xml:id="VI.5.13.20" n="VI 5.13.20">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Nullus pluribus uti defensionibus prohibetur.</p></div>
+<div type="regula" xml:id="VI.5.13.21" n="VI 5.13.21">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Quod semel placuit amplius displicere non potest.</p></div>
+<div type="regula" xml:id="VI.5.13.22" n="VI 5.13.22">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Non debet aliquis alterius odio praegravari.</p></div>
+<div type="regula" xml:id="VI.5.13.23" n="VI 5.13.23">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Sine culpa, nisi subsit causa, non est aliquis puniendus.</p></div>
+<div type="regula" xml:id="VI.5.13.24" n="VI 5.13.24">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Quod quis mandato facit iudicis, dolo facere non videtur, quum habeat parere necesse.</p></div>
+<div type="regula" xml:id="VI.5.13.25" n="VI 5.13.25">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Mora sua cuilibet est nociva.</p></div>
+<div type="regula" xml:id="VI.5.13.26" n="VI 5.13.26">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Ea, quae fiunt a iudice, si ad eius non spectant officium, viribus non subsistunt.</p></div>
+<div type="regula" xml:id="VI.5.13.27" n="VI 5.13.27">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Scienti et consentienti non fit iniuria neque dolus.</p></div>
+<div type="regula" xml:id="VI.5.13.28" n="VI 5.13.28">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Quae a iure communi exorbitant, nequaquam ad consequentiam sunt trahenda.</p></div>
+<div type="regula" xml:id="VI.5.13.29" n="VI 5.13.29">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>Quod omnes tangit debet ab omnibus approbari.</p></div>
+<div type="regula" xml:id="VI.5.13.30" n="VI 5.13.30">
+<head type="inscriptio">Idem.</head>
+<p><pb n="596" facs="https://iiif.archive.org/iiif/BD1141952$596/canvas"/><cb n="1122"/>In obscuris minimum est sequendum.</p></div>
+<div type="regula" xml:id="VI.5.13.31" n="VI 5.13.31">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Eum, qui certus est, certiorari ulterius non oportet.</p></div>
+<div type="regula" xml:id="VI.5.13.32" n="VI 5.13.32">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Non licet actori quod reo licitum non exsistit.</p></div>
+<div type="regula" xml:id="VI.5.13.33" n="VI 5.13.33">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Mutare consilium quis non potest in alterius detrimentum.</p></div>
+<div type="regula" xml:id="VI.5.13.34" n="VI 5.13.34">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Generi per speciem derogatur.</p></div>
+<div type="regula" xml:id="VI.5.13.35" n="VI 5.13.35">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Plus semper in se continet quod est minus.</p></div>
+<div type="regula" xml:id="VI.5.13.36" n="VI 5.13.36">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Pro possessore habetur qui dolo desiit possidere.</p></div>
+<div type="regula" xml:id="VI.5.13.37" n="VI 5.13.37">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Utile non debet per inutile vitari.</p></div>
+<div type="regula" xml:id="VI.5.13.38" n="VI 5.13.38">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Ex eo non debet quis fructum consequi, quod nisus exstitit impugnare.</p></div>
+<div type="regula" xml:id="VI.5.13.39" n="VI 5.13.39">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Quum quid prohibetur, prohibentur omnia, quae sequuntur ex illo.</p></div>
+<div type="regula" xml:id="VI.5.13.40" n="VI 5.13.40">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Pluralis locutio duorum numero est contenta.</p></div>
+<div type="regula" xml:id="VI.5.13.41" n="VI 5.13.41">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Imputari non debet ei, per quem non stat, si non faciat quod per eum fuerat faciendum.</p></div>
+<div type="regula" xml:id="VI.5.13.42" n="VI 5.13.42">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Accessorium naturam sequi congruit principalis.</p></div>
+<div type="regula" xml:id="VI.5.13.43" n="VI 5.13.43">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Qui tacet, consentire videtur.</p></div>
+<div type="regula" xml:id="VI.5.13.44" n="VI 5.13.44">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Is, qui tacet, non fatetur; sed nec utique negare videtur.</p></div>
+<div type="regula" xml:id="VI.5.13.45" n="VI 5.13.45">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Inspicimus in obscuris quod est verisimilius, vel quod plerumque fieri consuevit.</p></div>
+<div type="regula" xml:id="VI.5.13.46" n="VI 5.13.46">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Is, qui in ius succedit alterius, eo iure, quo ille, uti debebit.</p></div>
+<div type="regula" xml:id="VI.5.13.47" n="VI 5.13.47">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Praesumitur ignorantia, ubi scientia non probatur.</p></div>
+<div type="regula" xml:id="VI.5.13.48" n="VI 5.13.48">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Locupletari non debet aliquis cum alterius iniuria vel iactura.</p></div>
+<div type="regula" xml:id="VI.5.13.49" n="VI 5.13.49">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>In poenis benignior est interpretatio facienda.</p></div>
+<div type="regula" xml:id="VI.5.13.50" n="VI 5.13.50">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Actus legitimi conditionem non recipiunt neque diem.</p></div>
+<div type="regula" xml:id="VI.5.13.51" n="VI 5.13.51">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Semel Deo dicatum<metamark function="lectio-romana" rend="*"/> non est ad usus humanos ulterius transferendum.</p></div>
+<div type="regula" xml:id="VI.5.13.52" n="VI 5.13.52">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Non praestat impedimentum quod de iure non sortitur effectum.</p></div>
+<div type="regula" xml:id="VI.5.13.53" n="VI 5.13.53">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Cui licet quod est plus, licet utique quod est minus.</p></div>
+<div type="regula" xml:id="VI.5.13.54" n="VI 5.13.54">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Qui prior est tempore potior est iure.</p></div>
+<div type="regula" xml:id="VI.5.13.55" n="VI 5.13.55">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Qui sentit onus, sentire debet commodum, et e contra.</p></div>
+<div type="regula" xml:id="VI.5.13.56" n="VI 5.13.56">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>In re communi potior est conditio prohibentis.</p></div>
+<div type="regula" xml:id="VI.5.13.57" n="VI 5.13.57">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Contra eum, qui legem dicere potuit apertius, est interpretatio facienda.</p></div>
+<div type="regula" xml:id="VI.5.13.58" n="VI 5.13.58">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Non est obligatorium contra bonos mores praestitum iuramentum.</p></div>
+<div type="regula" xml:id="VI.5.13.59" n="VI 5.13.59">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Dolo facit, qui petit quod restituere oportet eundem.</p></div>
+<div type="regula" xml:id="VI.5.13.60" n="VI 5.13.60">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Non est in mora qui potest exceptione legitima se tueri.</p></div>
+<div type="regula" xml:id="VI.5.13.61" n="VI 5.13.61">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1123"/>Quod ob gratiam alicuius conceditur, non est in eius dispendium retorquendum.</p></div>
+<div type="regula" xml:id="VI.5.13.62" n="VI 5.13.62">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Nullus ex consilio, dummodo fraudulentum non fuerit, obligatur.</p></div>
+<div type="regula" xml:id="VI.5.13.63" n="VI 5.13.63">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Exceptionem obiciens non videtur de intentione adversarii confiteri.</p></div>
+<div type="regula" xml:id="VI.5.13.64" n="VI 5.13.64">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Quae contra ius fiunt debent utique pro infectis haberi.</p></div>
+<div type="regula" xml:id="VI.5.13.65" n="VI 5.13.65">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>In pari delicto vel causa potior est conditio possidentis.</p></div>
+<div type="regula" xml:id="VI.5.13.66" n="VI 5.13.66">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Quum non stat per eum, ad quem pertinet, quo minus conditio impleatur: haberi debet perinde, ac si impleta fuisset.</p></div>
+<div type="regula" xml:id="VI.5.13.67" n="VI 5.13.67">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Quod alicui suo non licet nomine, nec alieno licebit.</p></div>
+<div type="regula" xml:id="VI.5.13.68" n="VI 5.13.68">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Potest quis per alium, quod potest facere per se ipsum.</p></div>
+<div type="regula" xml:id="VI.5.13.69" n="VI 5.13.69">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>In malis promissis fidem non expedit observari.</p></div>
+<div type="regula" xml:id="VI.5.13.70" n="VI 5.13.70">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>In alternativis debitoris est electio, et sufficit alterum adimpleri.</p></div>
+<div type="regula" xml:id="VI.5.13.71" n="VI 5.13.71">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Qui ad agendum admittitur, est ad excipiendum multo magis admittendus.</p></div>
+<div type="regula" xml:id="VI.5.13.72" n="VI 5.13.72">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Qui facit per alium, est perinde, ac si faciat per se ipsum.</p></div>
+<div type="regula" xml:id="VI.5.13.73" n="VI 5.13.73">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Factum legitime retractari non debet, licet casus postea eveniat, a quo non potuit inchoari.</p></div>
+<div type="regula" xml:id="VI.5.13.74" n="VI 5.13.74">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Quod alicui gratiose conceditur, trahi non debet ab aliis in exemplum.</p></div>
+<div type="regula" xml:id="VI.5.13.75" n="VI 5.13.75">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Frustra sibi fidem quis postulat ab eo servari, cui fidem a se praestitam servare recusat.</p></div>
+<div type="regula" xml:id="VI.5.13.76" n="VI 5.13.76">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Delictum personae non debet in detrimentum ecclesiae redundare.</p></div>
+<div type="regula" xml:id="VI.5.13.77" n="VI 5.13.77">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Rationi congruit, ut succedat in onere, qui substituitur in honore.</p></div>
+<div type="regula" xml:id="VI.5.13.78" n="VI 5.13.78">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>In argumentum trahi nequeunt, quae propter necessitatem aliquando sunt concessa.</p></div>
+<div type="regula" xml:id="VI.5.13.79" n="VI 5.13.79">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Nemo potest plus iuris transferre in alium, quam sibi competere dinoscatur.</p></div>
+<div type="regula" xml:id="VI.5.13.80" n="VI 5.13.80">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>In toto partem non est dubium contineri.</p></div>
+<div type="regula" xml:id="VI.5.13.81" n="VI 5.13.81">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>In generali concessione non veniunt ea, quae quis non esset verisimiliter in specie concessurus.</p></div>
+<div type="regula" xml:id="VI.5.13.82" n="VI 5.13.82">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Qui contra iura mercatur, bonam fidem praesumitur non habere.</p></div>
+<div type="regula" xml:id="VI.5.13.83" n="VI 5.13.83">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Bona fides non patitur, ut semel exactum iterum exigatur.</p></div>
+<div type="regula" xml:id="VI.5.13.84" n="VI 5.13.84">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Quum quid una via prohibetur alicui, ad id alia non debet admitti.</p></div>
+<div type="regula" xml:id="VI.5.13.85" n="VI 5.13.85">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Contractus ex conventione legem accipere dinoscuntur.</p></div>
+<div type="regula" xml:id="VI.5.13.86" n="VI 5.13.86">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Damnum, quod quis sua culpa sentit, sibi debet, non aliis<metamark function="lectio-romana" rend="*"/>, imputare.</p></div>
+<div type="regula" xml:id="VI.5.13.87" n="VI 5.13.87">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Infamibus portae non pateant dignitatum.</p></div>
+<div type="regula" xml:id="VI.5.13.88" n="VI 5.13.88">
+<head type="inscriptio">Idem.</head>
+<p><pb n="597" facs="https://iiif.archive.org/iiif/BD1141952$597/canvas"/><cb n="1124"/>Certum est, quod is committit in legem, qui, legis verba complectens, contra legis nititur voluntatem. Data<metamark function="lectio-romana" rend="*"/> Romae apud sanctum Petrum, V. Nonas Martii, Pontificatus nostri anno quarto.</p></div>
 </div>
 </div>
 </div>

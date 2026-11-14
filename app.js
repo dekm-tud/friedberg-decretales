@@ -124,8 +124,8 @@
   }
 
   function kapitelHtml(k) {
-    const c = k.typ === "capitulum" ? "c. " + (k.id.split(" ")[1] || "").split(".").pop() : "";
-    const name = k.typ === "capitulum" ? zitId(k.id) : (/^\S+ pr$/.test(k.id) ? zitId(k.id).replace(/ pr$/, "") + ", Bulla promulgationis" : zitId(k.id).replace(/ pr\d*$/, "") + " (ohne Kapitelzählung)");
+    const c = k.typ === "capitulum" || k.typ === "regula" ? (k.typ === "regula" ? "reg. " : "c. ") + (k.id.split(" ")[1] || "").split(".").pop() : "";
+    const name = k.typ === "capitulum" || k.typ === "regula" ? zitId(k.id) : (/^\S+ pr$/.test(k.id) ? zitId(k.id).replace(/ pr$/, "") + ", Bulla promulgationis" : zitId(k.id).replace(/ pr\d*$/, "") + " (ohne Kapitelzählung)");
     return `<article class="kap" id="${esc(hashId(k.id))}" data-id="${esc(k.id)}">
       <div class="rand">${c ? `<a class="c" href="#${esc(hashId(k.id))}">${esc(c)}</a>` : ""}</div>
       <div class="korpus">

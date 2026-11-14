@@ -17,7 +17,8 @@ Lesefassung: https://dekm-tud.github.io/friedberg-decretales/
 | `CITATION.cff`, `.zenodo.json` | Angaben für die Zitation und für die Archivierung bei Zenodo |
 
 Kennungen folgen der üblichen Zählung (`X 3.5.12`, `VI 1.6.3`, `Clem 3.4.2`, `Extrav.Io 5.1`, `Extrav.comm 3.2.1`).
-Die Promulgationsbullen der drei ersten Sammlungen heißen `X pr`, `VI pr` und `Clem pr`. Die Lesefassung adressiert
+Die Promulgationsbullen der drei ersten Sammlungen heißen `X pr`, `VI pr` und `Clem pr`. Der im Druck ungezählte
+Titel De regulis iuris am Ende des Liber Sextus wird als `VI 5.13` geführt, die Regulae als `VI 5.13.1` bis `VI 5.13.88`. Die Lesefassung adressiert
 ein Kapitel mit `#X.3.5.12`, die TEI-Datei mit `xml:id="X.3.5.12"`.
 
 Zum lokalen Ansehen: `python3 build_data.py && python3 -m http.server`, dann http://localhost:8000.

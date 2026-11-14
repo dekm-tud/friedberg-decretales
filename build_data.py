@@ -59,16 +59,16 @@ def main():
         libri[-1]["tituli"].append(dict(
             titulus=t, rom=rom(t) if t else "", rubrik=rs[0]["rubrik"], datei="t/" + fn,
             kapitel=[dict(id=r["id"], inc=" ".join(r["text"].split()[:4]), blatt=(r["blatt"] or [None])[0],
-                          **({} if r["typ"] == "capitulum" else {"ohne": 1})) for r in rs]))
+                          **({} if r["typ"] in ("capitulum", "regula") else {"ohne": 1})) for r in rs]))
     for f in os.listdir(os.path.join(a.out, "t")):       # Titeldateien früherer Läufe entfernen
         if f.endswith(".json") and f not in dateien:
             os.remove(os.path.join(a.out, "t", f))
     stat = collections.OrderedDict()
     for r in recs:
-        if r["typ"] != "capitulum":
+        if r["typ"] not in ("capitulum", "regula"):
             continue
         st = stat.setdefault(r["werk"], dict(kapitel=0, woerter=0, u=[], berichtigt=0, unsicher=0))
-        st["kapitel"] += 1; st["woerter"] += len(r["text"].split())
+        st["kapitel"] += r["typ"] == "capitulum"; st["woerter"] += len(r["text"].split())
         if r["uebereinstimmung"] is not None:
             st["u"].append(r["uebereinstimmung"])
         st["berichtigt"] += sum(len(k["neu"]) or 1 for k in r["korrekturen"] if k["feld"] == "text")
