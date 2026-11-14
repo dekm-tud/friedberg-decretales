@@ -35,13 +35,13 @@ Seite [Zur Ausgabe](https://dekm-tud.github.io/friedberg-decretales/ausgabe.html
 ## Zitieren
 
 X 3.5.12, in: Corpus iuris canonici, ed. Aemilius Friedberg, Bd. 2: Decretalium collectiones, Leipzig 1881, Sp. 468.
-Digitale Fassung bearb. von Michael Schonhardt, https://dekm-tud.github.io/friedberg-decretales/#X.3.5.12
+Digitale Fassung bearb. von Michael Schonhardt, https://dekm-tud.github.io/friedberg-decretales/#X.3.5.12,
+DOI 10.5281/zenodo.24223455
 
 ## Archivierung und DOI
 
-Das Repositorium ist für die Archivierung bei Zenodo eingerichtet (`.zenodo.json`). Nach der ersten Veröffentlichung
-dort wird die DOI als Zeile `doi: 10.5281/zenodo.…` in `CITATION.cff` eingetragen. Von da an erscheint sie in der
-Zitierangabe jedes Kapitels, auf der Seite Zur Ausgabe und im Kopf der TEI-Datei.
+Die Fassung ist bei Zenodo archiviert: https://doi.org/10.5281/zenodo.24223455. Die DOI steht in `CITATION.cff` und erscheint von dort
+in der Zitierangabe jedes Kapitels, auf der Seite Zur Ausgabe und im Kopf der TEI-Datei.
 
 ## Verantwortlich
 

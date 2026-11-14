@@ -106,7 +106,8 @@
   function zitat(k) {
     const sp = spaltenText(k);
     const stand = state.index.stand ? new Date(state.index.stand).toLocaleDateString("de-DE") : "";
-    return `${zitId(k.id)}, in: Corpus iuris canonici, ed. Aemilius Friedberg, Bd. 2: Decretalium collectiones, Leipzig 1881` +
+    const reg = k.typ === "regula" ? ` (De regulis iuris, reg. ${k.id.split(".").pop()})` : "";
+    return `${zitId(k.id)}${reg}, in: Corpus iuris canonici, ed. Aemilius Friedberg, Bd. 2: Decretalium collectiones, Leipzig 1881` +
            (sp ? `, ${sp}` : "") + `. Digitale Fassung bearb. von Michael Schonhardt, ${adresse(k.id)}` + (stand ? ` (Stand ${stand})` : "") +
            (state.index.doi ? `, DOI ${state.index.doi}` : "");
   }
