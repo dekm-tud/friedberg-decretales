@@ -48,14 +48,15 @@
       <a href="https://www.linglit.tu-darmstadt.de/institutlinglit/mitarbeitende/schonhardt_linglit/schonhardt_startseite_linglit.de.jsp">Digitale Editorik und Kulturgeschichte des Mittelalters</a>,
       Technische Universität Darmstadt</dd>
     <dt>Projekt</dt>
-    <dd><i>Embedding the Past</i>. Gefördert im Programm LOEWE-Exploration sowie von der Technischen Universität
-      Darmstadt und der Akademie der Wissenschaften und der Literatur | Mainz</dd>
+    <dd><i>Embedding the Past</i>, gefördert im Programm LOEWE-Exploration</dd>
     <dt>Vorlage</dt>
     <dd>Digitalisat des Internet Archive (<a href="https://archive.org/details/BD1141952">BD1141952</a>). Die
       Seitenbilder werden über IIIF von dort geladen.</dd>
     <dt>Lizenz</dt>
     <dd>Text und Daten der digitalen Fassung stehen unter
       <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a>.</dd>
+    <dt id="doi-dt" hidden>DOI</dt>
+    <dd id="doi-dd" hidden></dd>
     <dt>Kontakt</dt>
     <dd><a href="mailto:michael.schonhardt@tu-darmstadt.de">michael.schonhardt@tu-darmstadt.de</a></dd>
   </dl>
@@ -98,8 +99,8 @@
   berichtigt.</p>
 
   <h2>Daten</h2>
-  <p>Der Text steht kapitelweise auch als JSON Lines und als TEI zur Verfügung. Die Seitenbilder bleiben beim
-  Internet Archive.</p>
+  <p>Der Text steht kapitelweise auch als <a href="daten/friedberg_bd2.jsonl">JSON Lines</a> und als
+  <a href="daten/friedberg_bd2.xml">TEI</a> zur Verfügung. Die Seitenbilder bleiben beim Internet Archive.</p>
 </main>
 <script>
 (async () => {
@@ -118,12 +119,16 @@
     }).join("");
     document.querySelector("#genau tfoot").innerHTML = `<tr><td>zusammen</td><td class="z">${fmt(sum.kapitel)}</td>` +
       `<td class="z">${fmt(sum.woerter)}</td><td></td><td></td><td class="z">${fmt(sum.berichtigt)}</td><td class="z">${fmt(sum.unsicher)}</td></tr>`;
+    if (d.doi) {
+      document.getElementById("doi-dt").hidden = false; const dd = document.getElementById("doi-dd"); dd.hidden = false;
+      dd.innerHTML = `<a href="https://doi.org/${d.doi}">${d.doi}</a>`;
+    }
     if (d.stand) {
       const st = new Date(d.stand).toLocaleDateString("de-DE");
       document.getElementById("stand").textContent = st;
       document.getElementById("bsp-zitat").textContent = "X 3.5.12, in: Corpus iuris canonici, ed. Aemilius Friedberg, Bd. 2: " +
         "Decretalium collectiones, Leipzig 1881, Sp. 468. Digitale Fassung bearb. von Michael Schonhardt, " +
-        (d.basis || "") + "#X.3.5.12 (Stand " + st + ")";
+        (d.basis || "") + "#X.3.5.12 (Stand " + st + ")" + (d.doi ? ", DOI " + d.doi : "");
     }
   } catch (e) { /* Seite bleibt ohne Zahlen lesbar */ }
 })();

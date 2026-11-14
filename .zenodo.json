@@ -1,0 +1,24 @@
+{
+  "title": "Corpus iuris canonici II. Decretalium collectiones, ed. Aemilius Friedberg (Leipzig 1881). Digitale Fassung",
+  "upload_type": "dataset",
+  "description": "<p>Text der Dekretalensammlungen (Liber Extra, Liber Sextus, Clementinae, Extravagantes Ioannis XXII, Extravagantes communes) nach der Ausgabe von Aemilius Friedberg, Corpus iuris canonici, Pars secunda, Leipzig 1881. Die Fassung gibt den Haupttext kapitelweise mit Summarium und Inskription wieder und verbindet ihn mit Spalte und Seitenbild des Digitalisats. Sie liegt als TEI und als JSON Lines vor. Friedbergs kritischer Apparat ist nicht aufgenommen.</p><p>Lesefassung: https://dekm-tud.github.io/friedberg-decretales/</p>",
+  "creators": [
+    {
+      "name": "Schonhardt, Michael",
+      "orcid": "0000-0002-2750-1900",
+      "affiliation": "Technische Universität Darmstadt, Fachgebiet Digitale Editorik und Kulturgeschichte des Mittelalters"
+    }
+  ],
+  "contributors": [
+    { "name": "Friedberg, Emil", "type": "Editor" }
+  ],
+  "license": "cc-by-4.0",
+  "language": "lat",
+  "access_right": "open",
+  "keywords": ["Corpus iuris canonici", "Liber Extra", "Liber Sextus", "Clementinae", "Extravagantes", "kanonisches Recht", "TEI"],
+  "related_identifiers": [
+    { "identifier": "https://dekm-tud.github.io/friedberg-decretales/", "relation": "isSupplementTo", "resource_type": "other" },
+    { "identifier": "https://archive.org/details/BD1141952", "relation": "isDerivedFrom", "resource_type": "publication-book" }
+  ],
+  "notes": "Entstanden im Projekt Embedding the Past, gefördert im Programm LOEWE-Exploration."
+}

@@ -3,11 +3,12 @@
 
   python3 build_data.py --in daten/friedberg_bd2.jsonl --out data
 
-data/index.json        Gliederung (Sammlung, Buch, Titel, Kapitel), Kennzahlen je Sammlung, Adresse für Zitierlinks
+data/index.json        Gliederung (Sammlung, Buch, Titel, Kapitel), Kennzahlen je Sammlung, Adresse für Zitierlinks,
+                       DOI aus CITATION.cff (Zeile „doi:“), sobald sie dort steht
 data/t/<titel>.json    Kapitel eines Titels mit Text, Kursive, Spaltenwechseln, Textblöcken im Seitenbild, Korrekturen
 data/volltext.json     Kennung und Text aller Kapitel für die Volltextsuche
 """
-import argparse, collections, datetime, json, os
+import argparse, collections, datetime, json, os, re
 
 BASIS = "https://dekm-tud.github.io/friedberg-decretales/"
 MANIFEST = "https://iiif.archive.org/iiif/3/BD1141952/manifest.json"
@@ -78,7 +79,12 @@ def main():
         st["ab95"] = round(sum(x >= 0.95 for x in u) / len(u), 4) if u else None
     json.dump(volltext, open(os.path.join(a.out, "volltext.json"), "w", encoding="utf-8"), ensure_ascii=False,
               separators=(",", ":"))
-    json.dump(dict(item="BD1141952", manifest=MANIFEST, basis=BASIS, stand=a.stand or datetime.date.today().isoformat(),
+    doi = None                                           # DOI der Zenodo-Veröffentlichung, einmal in CITATION.cff eingetragen
+    cff = os.path.join(os.path.dirname(os.path.abspath(__file__)), "CITATION.cff")
+    if os.path.exists(cff):
+        m = re.search(r'^doi:\s*"?(10\.[^"\s]+)', open(cff, encoding="utf-8").read(), re.M)
+        doi = m.group(1) if m else None
+    json.dump(dict(item="BD1141952", manifest=MANIFEST, basis=BASIS, stand=a.stand or datetime.date.today().isoformat(), doi=doi,
                    statistik=stat, werke=index),
               open(os.path.join(a.out, "index.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print("webdaten: %d Titel, %d Datensätze" % (len(groups), len(recs)))

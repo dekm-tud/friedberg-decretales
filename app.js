@@ -44,7 +44,7 @@
 
   // ---------------------------------------------------------------- Gliederung
   function titelName(w, l, t) {
-    if (t.titulus == null) return w.werk === "X" && l.liber == null ? "Bulla promulgationis" : "Ohne Titelzählung";
+    if (t.titulus == null) return l.liber == null ? "Bulla promulgationis" : "Ohne Titelzählung";
     return t.rubrik || "";
   }
   function baueGliederung() {
@@ -89,7 +89,7 @@
       const c = neu.get(i), u = uns.get(i);
       if (c && c.art !== "getilgt") h = `<span class="kb" title="OCR: ${esc(c.alt || "–")}">${h}</span>`;
       else if (u) h = `<span class="ku" title="auch: ${esc(u.olmocr ?? u.archive_org ?? "–")}">${h}</span>`;
-      out.push(" " + h);
+      out.push((/^[.,;:?!)\]]+$/.test(w) ? "" : " ") + h);
     });
     return out.join("").trim();
   }
@@ -107,7 +107,8 @@
     const sp = spaltenText(k);
     const stand = state.index.stand ? new Date(state.index.stand).toLocaleDateString("de-DE") : "";
     return `${zitId(k.id)}, in: Corpus iuris canonici, ed. Aemilius Friedberg, Bd. 2: Decretalium collectiones, Leipzig 1881` +
-           (sp ? `, ${sp}` : "") + `. Digitale Fassung bearb. von Michael Schonhardt, ${adresse(k.id)}` + (stand ? ` (Stand ${stand})` : "");
+           (sp ? `, ${sp}` : "") + `. Digitale Fassung bearb. von Michael Schonhardt, ${adresse(k.id)}` + (stand ? ` (Stand ${stand})` : "") +
+           (state.index.doi ? `, DOI ${state.index.doi}` : "");
   }
 
   function lesung(k) {
@@ -124,7 +125,7 @@
 
   function kapitelHtml(k) {
     const c = k.typ === "capitulum" ? "c. " + (k.id.split(" ")[1] || "").split(".").pop() : "";
-    const name = k.typ === "capitulum" ? zitId(k.id) : zitId(k.id).replace(/ pr\d*$/, "") + " (ohne Kapitelzählung)";
+    const name = k.typ === "capitulum" ? zitId(k.id) : (/^\S+ pr$/.test(k.id) ? zitId(k.id).replace(/ pr$/, "") + ", Bulla promulgationis" : zitId(k.id).replace(/ pr\d*$/, "") + " (ohne Kapitelzählung)");
     return `<article class="kap" id="${esc(hashId(k.id))}" data-id="${esc(k.id)}">
       <div class="rand">${c ? `<a class="c" href="#${esc(hashId(k.id))}">${esc(c)}</a>` : ""}</div>
       <div class="korpus">
